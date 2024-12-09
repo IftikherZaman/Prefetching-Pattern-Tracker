@@ -1,6 +1,7 @@
 [build]
+  base = "memory-analysis-dashboard"
   command = "npm run build"
-  publish = ".next"
+  publish = "memory-analysis-dashboard/.next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
