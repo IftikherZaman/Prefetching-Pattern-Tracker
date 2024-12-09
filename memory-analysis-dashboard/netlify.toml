@@ -1,7 +1,12 @@
 [build]
-  base = "memory-analysis-dashboard"
-  command = "npm run build"
-  publish = "memory-analysis-dashboard/.next"
+  base = "memory-analysis-dashboard"   # Set the base directory here
+  command = "npm run build"            # Build command remains the same
+  publish = ".next"                    # Publish directory inside the base
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
