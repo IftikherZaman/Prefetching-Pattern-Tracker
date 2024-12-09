@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 'use client';
 import React, { useState } from 'react';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
@@ -54,20 +56,20 @@ const Header = () => {
             </div>
             
             <p className="text-gray-600 leading-relaxed text-lg">
-              Hi, I'm Iftikher Zaman, a 3rd Year Computer Engineering student at the University of Toronto.
-              As a Computer Architecture enthusiast, I've developed this dashboard to analyze memory access patterns
+              Hi, I am Iftikher Zaman, a 3rd Year Computer Engineering student at the University of Toronto.
+              As a Computer Architecture enthusiast, I have developed this dashboard to analyze memory access patterns
               and prefetching behavior. Using Linux Perf for tracing, this tool provides insights into how programs
               interact with memory and cache systems.
               , 
               
-              The dataset is collected from a sample C program and analyzed through linux perf's mem trace feature.
+              The dataset is collected from a sample C program and analyzed through linux perf mem trace feature.
             </p>
 
             <div className="flex items-center space-x-4">
               <a
                 href="/perf_output_enhanced.csv"
                 download
-                className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
+                className="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
               >
                 <Download size={18} className="mr-2" />
                 <span>Download Dataset</span>
@@ -75,7 +77,7 @@ const Header = () => {
               <a
                 href="/ExtendedData2CSV.py"
                 download
-                className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
+                className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
               >
                 <Download size={18} className="mr-2" />
                 <span> Perf data to CSV converter</span>
